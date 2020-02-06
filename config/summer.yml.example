@@ -1,0 +1,4 @@
+nick: '<botname>'
+use_ssl: false
+server_password: '<oauthtoken>'
+channel: '<yourhcannel>'
