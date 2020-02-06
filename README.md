@@ -28,3 +28,6 @@ channel: '#your_channel_here'
 ## Notes
 - We set SSL to false because there could be potential issues with the openssl library. Feel free to test it set to true for SSL.
 - *The host key must be wrapped in quotes. For example, if your pc had an IP of 10.0.0.100, the host key would be `host: "10.0.0.100"`
+
+# Other Issues
+If you have any issues and I happen to be streaming, feel free to ask me at twitch.tv/itsdefinitelyfluff if I'm live, or raise an issue here.
