@@ -30,4 +30,4 @@ channel: '#your_channel_here'
 - *The host key must be wrapped in quotes. For example, if your pc had an IP of 10.0.0.100, the host key would be `host: "10.0.0.100"`
 
 # Other Issues
-If you have any issues and I happen to be streaming, feel free to ask me at [twitch.tv/itsdefinitelyfluff](twitch.tv/itsdefinitelyfluff) if I'm live, or raise an issue here.
+If you have any issues and I happen to be streaming, feel free to ask me at [http://twitch.tv/itsdefinitelyfluff](http://twitch.tv/itsdefinitelyfluff) if I'm live, or raise an issue here.
