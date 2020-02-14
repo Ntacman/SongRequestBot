@@ -1,7 +1,0 @@
-:players:
-- :name: foobar
-  :enabled: false
-  :script: "./plugins/foobar.rb"
-- :name: webplayer
-  :enabled: true
-  :script: "./plugins/webplayer.rb"
