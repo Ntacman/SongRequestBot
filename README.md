@@ -2,32 +2,15 @@
 Homemade Music Request Bot for Twitch.tv written in Ruby
 
 
-# Set Up Instructions and Requirements
-1. Have a functioning Ruby environment
-2. Have the following gems installed:
-```
-summer(v1.0.0)
-rest-client
-```
-3. Have Foobar2000 Set up with the following component
-```
-https://www.foobar2000.org/components/view/foo_beefweb
-https://www.foobar2000.org/components/view/foo_youtube - If you want youtube support
-```
-4. Copy the example files in the `config` folder and remove the `.example` extensions
-5. Open `foobar.yml` and set the `host` key to the IP of the computer running foobar2000*, and set the `port` key to the value configured in the foo_beefweb component configuration menu in foobar2000
-6. Open `summer.yml` and configure the following options:
-```
-nick: 'your_bots_twitch_username_here'
-use_ssl: false
-server_password: 'your_oauth_token_with_oauth:_prefix'
-channel: '#your_channel_here'
-```
-7. Run the command `ruby main.rb`, or if you're running newer versions of ruby and getting deprecation warnings, `ruby -W0 main.rb` to suppress them
+# Set Up Instructions and Requirements from pre-built release
+1. Set up the config.toml file per the example
+2. drop youtube-dl.exe or youtube-dl linux executable into the same directory as the app and config file
+3. run `./SongRequestBot` in your terminal, or on windows open cmd and run `SongRequestBot.exe`
 
-## Notes
-- We set SSL to false because there could be potential issues with the openssl library. Feel free to test it set to true for SSL.
-- *The host key must be wrapped in quotes. For example, if your pc had an IP of 10.0.0.100, the host key would be `host: "10.0.0.100"`
+# Set Up Instructions and Requirements when building from Source
+1. Set up the config.toml file per the example
+2. drop youtube-dl.exe or youtube-dl linux executable into the same directory as the app and config file (If running a debug copy by `cargo run`, it should still look in the same directory where Cargo.toml resides)
+3. `cargo run` to run in debug, or `cargo build --release` to build a release optimized build
 
 # Other Issues
 If you have any issues and I happen to be streaming, feel free to ask me at [http://twitch.tv/itsdefinitelyfluff](http://twitch.tv/itsdefinitelyfluff) if I'm live, or raise an issue here.
