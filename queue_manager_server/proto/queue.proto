@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service Queue {
+    rpc GetNextSong(GetNextSongRequest) returns (GetNextSongResponse) {};
+    rpc ListSongs(ListSongsRequest) returns (ListSongsResponse) {};
+    rpc AddSong(Song) returns (ListSongsResponse) {}; // Return the entire queue after a new song was added for verification, reuses list song response
+}
+
+package songrequest;
+message GetNextSongRequest{}
+message GetNextSongResponse{Song song = 1;}
+message ListSongsRequest {}
+message ListSongsResponse {repeated Song songs = 1;}
+message Song {
+    string requested_by = 1;
+    string song_url = 2;
+}
