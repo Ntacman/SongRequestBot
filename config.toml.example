@@ -1,9 +1,0 @@
-nickname = "yourbotsnamehere"
-server = "irc.chat.twitch.tv"
-channels = ["#yourchannelnamehere"]
-port = 6667
-password = "oauth:youroauthtokenhere"
-
-[options]
-api_host = "http://localhost"
-api_port = "8000"
