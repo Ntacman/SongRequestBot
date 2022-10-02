@@ -8,8 +8,6 @@ require 'pry'
 require 'byebug'
 require 'pry-byebug'
 
-$song_queue
-
 class QueueServer < Songrequest::Queue::Service
   # Fake a pre-existing queue with songs so we can write a smaller client example
   
