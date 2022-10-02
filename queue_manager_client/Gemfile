@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem 'grpc', '~> 1.49', '>= 1.49.1'
+gem 'grpc-tools', '~> 1.49', '>= 1.49.1'
+gem 'byebug'
+gem 'pry'
+gem 'pry-byebug'
+gem 'ffaker'
